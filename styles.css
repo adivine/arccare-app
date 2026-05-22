@@ -190,3 +190,276 @@ dialog::backdrop { background: rgba(23, 32, 52, .48); }
   .row { align-items: flex-start; flex-direction: column; }
   .actions button { flex: 1 1 150px; }
 }
+
+
+/* ArcCare Luxury Senior-Friendly Polish */
+
+/* Brand palette */
+:root {
+  --arc-navy: #081735;
+  --arc-navy-soft: #132342;
+  --arc-gold: #d8b35f;
+  --arc-gold-deep: #c79b3b;
+  --arc-ivory: #f7f1e6;
+  --arc-cream: #fffaf2;
+  --arc-card: #ffffff;
+  --arc-border: #d5c7ad;
+  --arc-text: #081735;
+  --arc-muted: #4a5872;
+  --arc-shadow: 0 18px 45px rgba(8, 23, 53, 0.12);
+}
+
+/* Overall app feel */
+body {
+  background:
+    radial-gradient(circle at top left, rgba(216, 179, 95, 0.20), transparent 35%),
+    linear-gradient(180deg, #fffaf2 0%, #f7f1e6 100%) !important;
+  color: var(--arc-text) !important;
+  font-size: 18px !important;
+}
+
+/* Main layout */
+main {
+  max-width: 1040px !important;
+  margin: 0 auto !important;
+  padding: 32px 28px 120px !important;
+}
+
+/* Header */
+.topbar {
+  background: rgba(255, 250, 242, 0.92) !important;
+  border-bottom: 1px solid var(--arc-border) !important;
+  padding: 22px 28px !important;
+  box-shadow: 0 8px 25px rgba(8, 23, 53, 0.08) !important;
+}
+
+/* Logo and brand lockup */
+.brand {
+  gap: 18px !important;
+  align-items: center !important;
+}
+
+.brand img {
+  width: 86px !important;
+  height: 86px !important;
+  object-fit: contain !important;
+  border-radius: 18px !important;
+  background: var(--arc-navy) !important;
+  padding: 8px !important;
+  box-shadow: 0 12px 28px rgba(8, 23, 53, 0.22) !important;
+}
+
+.brand-title,
+.brand h1 {
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--arc-navy) !important;
+}
+
+.brand-subtitle,
+.brand p {
+  font-size: 1.05rem !important;
+  color: var(--arc-muted) !important;
+}
+
+/* Greeting and page title */
+.date-line,
+.lead {
+  color: var(--arc-muted) !important;
+  font-size: 1.1rem !important;
+}
+
+.today-title,
+h2 {
+  color: var(--arc-navy) !important;
+  font-size: clamp(2.3rem, 5vw, 4rem) !important;
+  line-height: 1.05 !important;
+  font-weight: 950 !important;
+  letter-spacing: -0.05em !important;
+}
+
+/* Cards */
+.card,
+.panel,
+.metric {
+  background: var(--arc-card) !important;
+  border: 2px solid rgba(213, 199, 173, 0.95) !important;
+  border-radius: 28px !important;
+  box-shadow: var(--arc-shadow) !important;
+}
+
+/* Dashboard grid cards */
+.grid {
+  gap: 18px !important;
+}
+
+.grid button,
+.actions button,
+button {
+  min-height: 64px !important;
+  border-radius: 22px !important;
+  font-size: 1.08rem !important;
+  font-weight: 850 !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* Primary oxygen hero action */
+.hero-action,
+.gold {
+  background:
+    linear-gradient(135deg, #e4c872 0%, #d8b35f 45%, #c79b3b 100%) !important;
+  color: var(--arc-navy) !important;
+  border: 2px solid #b88924 !important;
+  box-shadow: 0 20px 42px rgba(199, 155, 59, 0.35) !important;
+}
+
+.hero-action {
+  min-height: 150px !important;
+  font-size: clamp(1.45rem, 4vw, 2.2rem) !important;
+  text-align: left !important;
+  padding: 30px 36px !important;
+}
+
+/* Main dark button */
+.primary {
+  background: var(--arc-navy) !important;
+  color: #ffffff !important;
+  border: 2px solid var(--arc-navy) !important;
+  box-shadow: 0 14px 30px rgba(8, 23, 53, 0.20) !important;
+}
+
+/* Secondary buttons */
+.ghost {
+  background: #ffffff !important;
+  color: var(--arc-navy) !important;
+  border: 2px solid var(--arc-border) !important;
+}
+
+.ghost:hover,
+.primary:hover,
+.gold:hover {
+  transform: translateY(-1px) !important;
+  filter: brightness(0.98) !important;
+}
+
+/* Form fields, make them visible for Mom */
+label {
+  font-size: 1.05rem !important;
+  font-weight: 850 !important;
+  color: var(--arc-navy) !important;
+}
+
+input,
+textarea,
+select {
+  min-height: 62px !important;
+  border: 2.5px solid #6c5f49 !important;
+  border-radius: 18px !important;
+  background: #fffdf8 !important;
+  color: var(--arc-navy) !important;
+  font-size: 1.12rem !important;
+  font-weight: 650 !important;
+  padding: 14px 18px !important;
+}
+
+textarea {
+  min-height: 130px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 4px solid rgba(216, 179, 95, 0.35) !important;
+  border-color: var(--arc-gold-deep) !important;
+}
+
+/* Bottom nav, make it less tiny */
+.nav {
+  background: rgba(255, 250, 242, 0.96) !important;
+  border-top: 2px solid var(--arc-border) !important;
+  padding: 14px 12px !important;
+  gap: 10px !important;
+  overflow-x: auto !important;
+  box-shadow: 0 -10px 25px rgba(8, 23, 53, 0.08) !important;
+}
+
+.nav button {
+  min-height: 58px !important;
+  min-width: 125px !important;
+  padding: 14px 18px !important;
+  border-radius: 20px !important;
+  font-size: 1rem !important;
+  font-weight: 850 !important;
+  background: #ffffff !important;
+  color: var(--arc-navy) !important;
+  border: 2px solid var(--arc-border) !important;
+}
+
+.nav button.active {
+  background: var(--arc-navy) !important;
+  color: #ffffff !important;
+  border-color: var(--arc-navy) !important;
+}
+
+/* Safety note */
+.note.safety,
+.safety {
+  background: #fff0ef !important;
+  color: #7a1717 !important;
+  border: 2px solid #d79b96 !important;
+  border-radius: 20px !important;
+  font-size: 1rem !important;
+  padding: 18px 22px !important;
+}
+
+/* Empty states */
+.muted {
+  color: #39465d !important;
+  font-size: 1rem !important;
+}
+
+/* Mobile refinement */
+@media (max-width: 760px) {
+  main {
+    padding: 24px 18px 130px !important;
+  }
+
+  .topbar {
+    padding: 18px !important;
+  }
+
+  .brand img {
+    width: 74px !important;
+    height: 74px !important;
+  }
+
+  .brand-title,
+  .brand h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .summary-grid,
+  .grid.two,
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-action {
+    min-height: 170px !important;
+    padding: 28px !important;
+    text-align: left !important;
+  }
+
+  .nav button {
+    min-width: 140px !important;
+    min-height: 62px !important;
+    font-size: 1.05rem !important;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 1.15rem !important;
+  }
+}
